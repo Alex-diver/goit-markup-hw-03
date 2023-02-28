@@ -120,7 +120,10 @@ img {
 .header-link:focus {
 	color: #404bbf;
 }
-
+.header-address {
+	display: flex;
+	margin-left: auto;
+}
 .header-link-meil {
 	font-style: normal;
 	font-size: 16px;
@@ -128,11 +131,9 @@ img {
 	letter-spacing: 0.02em;
 	color: #434455;
 	padding: 24px 0;
-	margin-left: auto;
-	margin-right: 40px;
 }
-.header-link-meil:hover,
-.header-link-meil:focus {
+.header-link-two:hover,
+.header-link-two:focus {
 	color: #404bbf;
 }
 .header-link-tel {
@@ -141,12 +142,12 @@ img {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: #434455;
+	padding: 24px 0 24px 40px;
 }
 .header-link-tel:hover,
 .header-link-tel:focus {
 	color: #404bbf;
 }
-
 /* ---------------------Hero--------------------- */
 .hero {
 	/* width: 1440px; */
@@ -172,6 +173,9 @@ img {
 	margin: 0 auto;
 	background: #4d5ae5;
 	color: #ffffff;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	padding: 16px 32px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -187,11 +191,11 @@ img {
 	column-gap: var(--basic-margin);
 }
 .about-title {
-	font-weight: 500px;
+	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
-	color: var(-secondary-title-color);
+	color: var(--secondary-title-color);
 	margin-bottom: 8px;
 }
 .about-text {
@@ -229,19 +233,19 @@ img {
 }
 .blok-list {
 	display: flex;
-	/* gap: var(--basic-margin); */
+	flex-wrap: wrap;
+	row-gap: 48px;
+	column-gap: var(--basic-margin);
 }
 .blok-team {
-	width: 264px;
-	height: 380px;
 	background: #ffffff;
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 	border-radius: 0px 0px 4px 4px;
 }
 .team-subtitle {
 	text-align: center;
-	color: var(-secondary-title-color);
-	margin-top: 32px;
+	color: var(--secondary-title-color);
+	padding: 32px 0 8px;
 }
 .team-text {
 	font-weight: 400;
@@ -250,7 +254,7 @@ img {
 	text-align: center;
 	color: #434455;
 	letter-spacing: 0.02em;
-	margin-top: 8px;
+	padding-bottom: 32px;
 }
 /* ---------------------Filter--------------------- */
 .filter {
@@ -268,6 +272,7 @@ img {
 	color: #4d5ae5;
 	border: 1px solid #e7e9fc;
 	border-radius: 4px;
+	background: #f4f4fd;
 	padding: 12px 24px;
 }
 .filter-btn:hover,
@@ -275,7 +280,7 @@ img {
 	background: #404bbf;
 	color: #ffffff;
 }
-.blok-list {
+.filter-list-blok {
 	display: flex;
 	flex-wrap: wrap;
 	row-gap: 48px;
@@ -290,13 +295,13 @@ img {
 	border-top: 0;
 }
 .filter-subtitle {
-	color: var(-secondary-title-color);
+	color: var(--secondary-title-color);
 	padding: 32px 0 8px 16px;
 }
 .filter-text {
 	color: #434455;
 	letter-spacing: 0.02em;
-	padding-left: 16px;
+	padding: 0 0 32px 16px;
 }
 
 /* ---------------------Footer--------------------- */
